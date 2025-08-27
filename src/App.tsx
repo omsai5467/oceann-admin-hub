@@ -9,14 +9,6 @@ import AdminLayout from "./pages/AdminLayout";
 import Profile from "./pages/Profile";
 import ManageUsers from "./pages/ManageUsers";
 import AccessControl from "./pages/AccessControl";
-import SyncMails from "./pages/SyncMails";
-import SyncGroups from "./pages/SyncGroups";
-import SyncContact from "./pages/SyncContact";
-import SyncCalendar from "./pages/SyncCalendar";
-import SmtpConfig from "./pages/SmtpConfig";
-import Subscriptions from "./pages/Subscriptions";
-import PaymentHistory from "./pages/PaymentHistory";
-import CustomerSupport from "./pages/CustomerSupport";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,14 +30,15 @@ const App = () => (
             <Route path="profile" element={<Profile />} />
             <Route path="users" element={<ManageUsers />} />
             <Route path="access-control" element={<AccessControl />} />
-            <Route path="sync-mails" element={<SyncMails />} />
-            <Route path="sync-group" element={<SyncGroups />} />
-            <Route path="sync-contact" element={<SyncContact />} />
-            <Route path="sync-calendar" element={<SyncCalendar />} />
-            <Route path="smtp-config" element={<SmtpConfig />} />
-            <Route path="subscriptions" element={<Subscriptions />} />
-            <Route path="payments" element={<PaymentHistory />} />
-            <Route path="support" element={<CustomerSupport />} />
+            {/* Placeholder routes for other menu items */}
+            <Route path="sync-mails" element={<div className="p-6"><h1 className="text-2xl font-bold">Sync Mails</h1><p className="text-muted-foreground">Coming soon...</p></div>} />
+            <Route path="sync-group" element={<div className="p-6"><h1 className="text-2xl font-bold">Sync Group</h1><p className="text-muted-foreground">Coming soon...</p></div>} />
+            <Route path="sync-contact" element={<div className="p-6"><h1 className="text-2xl font-bold">Sync Contact</h1><p className="text-muted-foreground">Coming soon...</p></div>} />
+            <Route path="sync-calendar" element={<div className="p-6"><h1 className="text-2xl font-bold">Sync Calendar</h1><p className="text-muted-foreground">Coming soon...</p></div>} />
+            <Route path="smtp-config" element={<div className="p-6"><h1 className="text-2xl font-bold">SMTP Config</h1><p className="text-muted-foreground">Coming soon...</p></div>} />
+            <Route path="subscriptions" element={<div className="p-6"><h1 className="text-2xl font-bold">User Subscriptions</h1><p className="text-muted-foreground">Coming soon...</p></div>} />
+            <Route path="payments" element={<div className="p-6"><h1 className="text-2xl font-bold">Payment History</h1><p className="text-muted-foreground">Coming soon...</p></div>} />
+            <Route path="support" element={<div className="p-6"><h1 className="text-2xl font-bold">Customer Support</h1><p className="text-muted-foreground">Coming soon...</p></div>} />
           </Route>
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
